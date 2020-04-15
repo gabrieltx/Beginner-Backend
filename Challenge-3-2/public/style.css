@@ -1,0 +1,129 @@
+
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    background: #2d2f3f;
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+header div a {
+    color: thistle;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 30px;
+}
+
+header div a:hover {
+    font-size: 18.5px;
+    color: lightslategrey;
+    transition: color 200ms;
+}
+
+section.cards {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: auto;
+}
+
+div.card {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    color: blanchedalmond;
+    line-height: 32px;
+}
+
+div.cardImg {
+    text-align: center;
+    cursor: pointer;
+}
+
+div.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+p.card__prices {
+    background: #2d2f3f;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal.max {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 32px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
